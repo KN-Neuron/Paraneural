@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://beh57gubhotm7"]
+
+[ext_resource type="PackedScene" uid="uid://c48grkqhxkqqq" path="res://floor.tscn" id="2_0n1oe"]
+[ext_resource type="PackedScene" uid="uid://drji30hkh2rbf" path="res://player.tscn" id="2_5if4b"]
+
+[node name="Node" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("2_5if4b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, 0)
+
+[node name="CamPivot" type="Marker3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, -1, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/CamPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Player/CamPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+spot_range = 2.0
+spot_angle = 20.0
+
+[node name="Node3D" parent="." instance=ExtResource("2_0n1oe")]
+
+[node name="Node3D4" parent="." instance=ExtResource("2_0n1oe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.48, 0)
+
+[node name="Node3D3" parent="." instance=ExtResource("2_0n1oe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_0n1oe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.24, 0)

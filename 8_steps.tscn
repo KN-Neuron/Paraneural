@@ -1,0 +1,190 @@
+[gd_scene load_steps=11 format=3 uid="uid://7jjvbyl5tgll"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_j08ho"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vl0an"]
+size = Vector3(1, 0.18, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_utiro"]
+size = Vector3(1, 0.18, 0.25)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h42lh"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wk4w2"]
+top_radius = 0.01
+bottom_radius = 0.01
+height = 1.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2rcpp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_avl8q"]
+size = Vector3(1, 0.146, 2.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5yv2g"]
+size = Vector3(1, 0.146, 2.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pifke"]
+size = Vector3(0.1, 0.1, 2.46)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xtb66"]
+size = Vector3(0.1, 0.01, 2.46)
+
+[node name="HalfStep" type="Node3D"]
+
+[node name="Step" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18, -0.25)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step2"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step2"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step2"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step2/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, -0.5)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step3"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step3"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step3"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step3/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step4" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54, -0.75)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step4"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step4"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step4"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step4/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step5" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72, -1)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step5"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step5"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step5"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step5/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step6" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, -1.25)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step6"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step6"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step6"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step6/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step7" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08, -1.5)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step7"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step7"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step7"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step7/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Step8" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.26, -1.75)
+physics_material_override = SubResource("PhysicsMaterial_j08ho")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step8"]
+shape = SubResource("BoxShape3D_vl0an")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step8"]
+mesh = SubResource("BoxMesh_utiro")
+
+[node name="Barrier" type="StaticBody3D" parent="Step8"]
+physics_material_override = SubResource("PhysicsMaterial_h42lh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Step8/Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.59, 0)
+mesh = SubResource("CylinderMesh_wk4w2")
+
+[node name="Slope" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.811533, -0.584306, 0, 0.584306, 0.811533, 0, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_2rcpp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Slope"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0717419, -1.14361)
+shape = SubResource("BoxShape3D_avl8q")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Slope"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0717416, -1.14361)
+mesh = SubResource("BoxMesh_5yv2g")
+
+[node name="Barrier" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.811533, -0.584306, 0, 0.584306, 0.811533, 0, 0.78, -0.9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.746611, -0.537562)
+shape = SubResource("BoxShape3D_pifke")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.782642, -0.53886)
+mesh = SubResource("BoxMesh_xtb66")
