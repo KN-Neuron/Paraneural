@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://v6di0derauih"]
 
-[ext_resource type="PackedScene" uid="uid://chrhmpv2turmg" path="res://platform.tscn" id="1_vmibg"]
-[ext_resource type="PackedScene" uid="uid://7jjvbyl5tgll" path="res://8_steps.tscn" id="2_viood"]
+[ext_resource type="PackedScene" uid="uid://chrhmpv2turmg" path="res://scenes/parts/platform.tscn" id="1_ghxwu"]
+[ext_resource type="PackedScene" uid="uid://7jjvbyl5tgll" path="res://scenes/parts/8_steps.tscn" id="2_58xhr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e5usg"]
 size = Vector3(0.1, 3.24, 5.2)
@@ -11,7 +11,7 @@ size = Vector3(0.1, 3.24, 5.2)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Node3D" parent="." instance=ExtResource("1_vmibg")]
+[node name="Node3D" parent="." instance=ExtResource("1_ghxwu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Node3D"]
@@ -25,5 +25,5 @@ shape = SubResource("BoxShape3D_e5usg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 1, -0.75)
 mesh = SubResource("BoxMesh_5612d")
 
-[node name="HalfStep" parent="." instance=ExtResource("2_viood")]
+[node name="HalfStep" parent="." instance=ExtResource("2_58xhr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.18, -0.62)

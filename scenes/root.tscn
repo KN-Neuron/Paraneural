@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://beh57gubhotm7"]
 
-[ext_resource type="PackedScene" uid="uid://drji30hkh2rbf" path="res://player.tscn" id="2_5if4b"]
-[ext_resource type="PackedScene" uid="uid://cn2yxphoj8rec" path="res://intro_scene.tscn" id="2_6s30a"]
+[ext_resource type="PackedScene" uid="uid://drji30hkh2rbf" path="res://scenes/player.tscn" id="2_5if4b"]
+[ext_resource type="PackedScene" uid="uid://cn2yxphoj8rec" path="res://scenes/levels/intro_scene.tscn" id="2_6s30a"]
 
 [node name="Node" type="Node"]
 

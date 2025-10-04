@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddnferwacymhx"
-path="res://.godot/imported/male_base_mesh.glb-40510789055c805ff61450a74f37cc34.scn"
+path="res://.godot/imported/male_base_mesh.glb-a097ddf2624e0837bf6d4fa1122c587b.scn"
 
 [deps]
 
-source_file="res://male_base_mesh.glb"
-dest_files=["res://.godot/imported/male_base_mesh.glb-40510789055c805ff61450a74f37cc34.scn"]
+source_file="res://assets/male_base_mesh.glb"
+dest_files=["res://.godot/imported/male_base_mesh.glb-a097ddf2624e0837bf6d4fa1122c587b.scn"]
 
 [params]
 

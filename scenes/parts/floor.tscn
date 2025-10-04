@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c48grkqhxkqqq"]
 
-[ext_resource type="PackedScene" uid="uid://v6di0derauih" path="res://half_floor.tscn" id="1_kvlr2"]
+[ext_resource type="PackedScene" uid="uid://v6di0derauih" path="res://scenes/parts/half_floor.tscn" id="1_g6h4l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lky2x"]
 
@@ -27,9 +27,9 @@ size = Vector3(2.2, 0.1, 0.1)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Node3D" parent="." instance=ExtResource("1_kvlr2")]
+[node name="Node3D" parent="." instance=ExtResource("1_g6h4l")]
 
-[node name="Node3D2" parent="." instance=ExtResource("1_kvlr2")]
+[node name="Node3D2" parent="." instance=ExtResource("1_g6h4l")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.62, -2.99)
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]

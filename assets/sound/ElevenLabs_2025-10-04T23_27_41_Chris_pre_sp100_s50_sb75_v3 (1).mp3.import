@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b805g2ikmk7dr"
+path="res://.godot/imported/ElevenLabs_2025-10-04T23_27_41_Chris_pre_sp100_s50_sb75_v3 (1).mp3-3647a69402705291a34cbfb0c311eaea.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/ElevenLabs_2025-10-04T23_27_41_Chris_pre_sp100_s50_sb75_v3 (1).mp3"
+dest_files=["res://.godot/imported/ElevenLabs_2025-10-04T23_27_41_Chris_pre_sp100_s50_sb75_v3 (1).mp3-3647a69402705291a34cbfb0c311eaea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqfm1odyuvn08"]
 
-[ext_resource type="PackedScene" uid="uid://c48grkqhxkqqq" path="res://floor.tscn" id="1_wofpd"]
-[ext_resource type="PackedScene" uid="uid://7jjvbyl5tgll" path="res://8_steps.tscn" id="2_xgytk"]
-[ext_resource type="PackedScene" uid="uid://chrhmpv2turmg" path="res://platform.tscn" id="3_1ufuj"]
+[ext_resource type="PackedScene" uid="uid://c48grkqhxkqqq" path="res://scenes/parts/floor.tscn" id="1_8k6bu"]
+[ext_resource type="PackedScene" uid="uid://7jjvbyl5tgll" path="res://scenes/parts/8_steps.tscn" id="2_c6d5m"]
+[ext_resource type="PackedScene" uid="uid://chrhmpv2turmg" path="res://scenes/parts/platform.tscn" id="3_llhq3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eqlpj"]
 size = Vector3(0.1, 10, 14)
@@ -12,42 +12,42 @@ size = Vector3(0.1, 10, 14)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Node3D" parent="." instance=ExtResource("1_wofpd")]
+[node name="Node3D" parent="." instance=ExtResource("1_8k6bu")]
 
-[node name="Node3D4" parent="." instance=ExtResource("1_wofpd")]
+[node name="Node3D4" parent="." instance=ExtResource("1_8k6bu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.24, 8.01)
 
-[node name="Node3D3" parent="." instance=ExtResource("1_wofpd")]
+[node name="Node3D3" parent="." instance=ExtResource("1_8k6bu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 8)
 
-[node name="Node3D2" parent="." instance=ExtResource("1_wofpd")]
+[node name="Node3D2" parent="." instance=ExtResource("1_8k6bu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.24, 0)
 
-[node name="HalfStep" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 3.24, -0.37)
 
-[node name="HalfStep2" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep2" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 4.68, 1.63)
 
-[node name="HalfStep3" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep3" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 6.12, 3.63)
 
-[node name="HalfStep4" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep4" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 7.56, 5.63)
 
-[node name="HalfStep5" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep5" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 3.24, -3.97)
 
-[node name="HalfStep6" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep6" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 4.68, -1.97)
 
-[node name="HalfStep7" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep7" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 6.12, 0.0300001)
 
-[node name="HalfStep8" parent="." instance=ExtResource("2_xgytk")]
+[node name="HalfStep8" parent="." instance=ExtResource("2_c6d5m")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.6, 7.56, 2.03)
 
-[node name="Node3D5" parent="." instance=ExtResource("3_1ufuj")]
+[node name="Node3D5" parent="." instance=ExtResource("3_llhq3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.24, 0.26)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
