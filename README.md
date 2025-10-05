@@ -6,3 +6,9 @@
 
 
 ![telegram-cloud-photo-size-4-5985793095079413867-y](https://github.com/user-attachments/assets/a4667f26-e101-4828-91fd-8c252c956f4c)
+
+## How to run and play the game
+
+The game is in very early stages. Currently no builds are available.
+
+To play a debug demo, please download Godot 4.5 from the [official website](https://godotengine.org/) and start the project.
