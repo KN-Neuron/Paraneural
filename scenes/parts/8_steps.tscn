@@ -18,7 +18,7 @@ height = 1.0
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2rcpp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_avl8q"]
-size = Vector3(1, 0.146, 2.8)
+size = Vector3(1, 0.246, 2.8)
 
 [sub_resource type="BoxMesh" id="BoxMesh_5yv2g"]
 size = Vector3(1, 0.146, 2.8)
@@ -171,7 +171,7 @@ transform = Transform3D(1, 0, 0, 0, 0.811533, -0.584306, 0, 0.584306, 0.811533, 
 physics_material_override = SubResource("PhysicsMaterial_2rcpp")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Slope"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0717419, -1.14361)
+transform = Transform3D(1, 0, 0, 0, 1, -2.9802322e-08, 0, 2.9802322e-08, 1, 0, 0.045119405, -0.9813034)
 shape = SubResource("BoxShape3D_avl8q")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Slope"]
