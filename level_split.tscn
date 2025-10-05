@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://clm2uvkiqju47"]
+[gd_scene load_steps=3 format=3 uid="uid://clm2uvkiqju47"]
 
 [ext_resource type="PackedScene" uid="uid://c48grkqhxkqqq" path="res://scenes/parts/floor.tscn" id="1_q7ste"]
+[ext_resource type="PackedScene" uid="uid://v6di0derauih" path="res://scenes/parts/half_floor.tscn" id="2_0b0ef"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -12,5 +13,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.48, 0)
 [node name="Node3D3" parent="." instance=ExtResource("1_q7ste")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0)
 
+[node name="Node3D5" parent="." instance=ExtResource("2_0b0ef")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, -3.24, 0)
+
+[node name="CollisionShape3D" parent="Node3D5/Node3D/StaticBody3D" index="0"]
+visible = false
+
+[node name="MeshInstance3D" parent="Node3D5/Node3D/StaticBody3D" index="1"]
+visible = false
+
 [node name="Node3D2" parent="." instance=ExtResource("1_q7ste")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.24, 0)
+
+[node name="CollisionShape3D" parent="Node3D2/Node3D/Node3D/StaticBody3D" index="0"]
+visible = false
+
+[node name="MeshInstance3D" parent="Node3D2/Node3D/Node3D/StaticBody3D" index="1"]
+visible = false
+
+[node name="Node3D3" parent="Node3D2" instance=ExtResource("2_0b0ef")]
+transform = Transform3D(1, 0, -8.7422784e-08, 0, 1, 0, -8.74228e-08, 0, -0.9999998, 1, 1.62, -2.99)
+
+[editable path="Node3D5"]
+[editable path="Node3D2"]
+[editable path="Node3D2/Node3D"]

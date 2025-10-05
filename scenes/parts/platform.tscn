@@ -1,9 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://chrhmpv2turmg"]
+[gd_scene load_steps=6 format=3 uid="uid://chrhmpv2turmg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e8ysf"]
 size = Vector3(2.2, 0.18, 1)
 
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_11l5r"]
+noise_type = 3
+frequency = 0.2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_y0lox"]
+noise = SubResource("FastNoiseLite_11l5r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m63so"]
+albedo_texture = SubResource("NoiseTexture2D_y0lox")
+uv1_triplanar = true
+
 [sub_resource type="BoxMesh" id="BoxMesh_06fle"]
+material = SubResource("StandardMaterial3D_m63so")
 size = Vector3(2.2, 0.18, 1.5)
 
 [node name="Node3D" type="StaticBody3D"]

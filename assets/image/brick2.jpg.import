@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxymm4mlp4ye0"
-path.s3tc="res://.godot/imported/skybox.jpeg-49c9a76b2d821f0ace9e5f89828a4e44.s3tc.ctex"
+uid="uid://btmdt014ilgxw"
+path.s3tc="res://.godot/imported/brick2.jpg-51d54c78b603626558f02be020d86ffd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/image/skybox.jpeg"
-dest_files=["res://.godot/imported/skybox.jpeg-49c9a76b2d821f0ace9e5f89828a4e44.s3tc.ctex"]
+source_file="res://assets/image/brick2.jpg"
+dest_files=["res://.godot/imported/brick2.jpg-51d54c78b603626558f02be020d86ffd.s3tc.ctex"]
 
 [params]
 

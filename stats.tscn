@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg63msexrfhc4"]
+
+[ext_resource type="Script" uid="uid://dpudgwy6iwiwr" path="res://stats.gd" id="1_r4or0"]
+[ext_resource type="Script" uid="uid://nqo3xus8ax38" path="res://focus.gd" id="3_af2q3"]
+[ext_resource type="Script" uid="uid://ctxunj1vow8wt" path="res://stress.gd" id="4_agoph"]
+[ext_resource type="Script" uid="uid://rqhb0wjburxq" path="res://energy.gd" id="5_m8qmt"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r4or0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "💡"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+script = ExtResource("3_af2q3")
+
+[node name="Timer" type="Timer" parent="HBoxContainer/VBoxContainer/HBoxContainer/ProgressBar"]
+autostart = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "😌"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+script = ExtResource("4_agoph")
+
+[node name="Timer" type="Timer" parent="HBoxContainer/VBoxContainer/HBoxContainer2/ProgressBar"]
+autostart = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "💤"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+script = ExtResource("5_m8qmt")
+
+[node name="Timer" type="Timer" parent="HBoxContainer/VBoxContainer/HBoxContainer3/ProgressBar"]
+autostart = true
